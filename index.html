@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona virus tracker</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="navbar_container container">
+            <div class="logo_links">
+                <a href="" class="home_link">
+                    <p class="logo">track<span class="logo_span">C</span>orona</p>
+                </a>
+
+                <ul class="nav_links">
+                    <li class="link_li"><a href="#" class="link_href active">Home</a></li>
+                    <li class="link_li"><a href="#" class="link_href">Symptoms</a></li>
+                    <li class="link_li"><a href="#" class="link_href">Prevention</a></li>
+                </ul>
+            </div>
+
+            <div class="searchbar">
+                <form class="seach_bar">
+                    <input type="search" name="search" placeholder="Search for your country..." id="search_bar_input"
+                        class="search_bar_input">
+                    <button type="submit" class="search_btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main_content">
+        <div class="cards_container container">
+            <div class="overview_card">
+                <h1 class="overview_heading"><span>Coronavirus</span> disease<br>(COVID-19)<br>Pandemic</h1>
+
+                <p class="overview_info">The disease causes respiratory illness<br>(like the flu) with symptoms
+                    such<br>as a
+                    cough, fever...</p>
+
+                <button type="submit" class="more_info_btn">
+                    <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" target="_blank"
+                        class="btn_text">Know more</a>
+                    <i class="fas fa-caret-right caret_icon"></i>
+                </button>
+
+                <div class="overview_img"></div>
+            </div>
+
+            <div class="total_cases_card">
+                <div class="total_cases_cols">
+                    <div class="total_deaths">
+                        <h4 class="cases_number total_death_number">---</h4>
+                        <h3 class="total_deaths_heading">Death toll</h3>
+                    </div>
+
+                    <div class="total_recovered">
+                        <h4 class="cases_number total_recovered_number">---</h4>
+                        <h3 class="total_recovered_heading">total recovered</h3>
+                    </div>
+
+                    <div class="total_confirmed">
+                        <h4 class="cases_number total_infected_number">---</h4>
+                        <h3 class="total_confirmed_heading">total infected</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specific_card">
+                <h1 class="country_name">Your country's<br>stats</h1>
+
+                <div class="specific_rows">
+                    <!-- <div class="specific_deaths">
+                        <h4 class="cases_number death_number">---</h4>
+                        <h3 class="specific_deaths_heading">Death toll</h3>
+                    </div>
+
+                    <div class="specific_recovered">
+                        <h4 class="cases_number recovered_number">---</h4>
+                        <h3 class="specific_recovered_heading">recovered</h3>
+                    </div>
+
+                    <div class="specific_confirmed">
+                        <h4 class="cases_number infected_number">---</h4>
+                        <h3 class="specific_confirmed_heading">infected</h3>
+                    </div> -->
+                    <div class="no_result_img"></div>
+                    <p class="no_result_text">Seach for you<br>country to know<br>about the affected...</p>
+                </div>
+
+                <div class="clip_background"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer_container container">
+            <p class="copyright">&copy; 2020 <a href="https://github.com/Soumya-Dey" target="_blank">Soumya Dey</a> | All rights reserved.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/Soumya-Dey" target="_blank" class="social-link"><i class="fab fa-github social-icon"></i></a>
+                <a href="https://www.facebook.com/soumya.dey.39948" target="_blank" class="social-link"><i class="fab fa-facebook-f social-icon"></i></a>
+                <a href="https://www.instagram.com/soumya_sl/" target="_blank" class="social-link"><i class="fab fa-instagram social-icon"></i></a>
+                <a href="mailto:soumyadey200@hotmail.com" class="social-link"><i class="far fa-envelope social-icon"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="./app.js"></script> -->
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
