@@ -338,7 +338,7 @@ MAIN CONTENT STYLES
 .country_name {
     font-size: 2em;
     font-weight: 700;
-    margin-bottom: 46px;
+    margin-bottom: 60px;
     color: rgba(0, 0, 0, 0.8);
     position: relative;
 }
@@ -351,6 +351,10 @@ MAIN CONTENT STYLES
     text-transform: uppercase;
     opacity: 0.35;
     margin-bottom: 52px;
+}
+
+.specific_confirmed_heading{
+    margin-bottom: 0;
 }
 
 .infected_number,
