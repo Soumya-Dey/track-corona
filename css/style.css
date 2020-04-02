@@ -27,10 +27,12 @@ input:focus {
 
 ::-webkit-scrollbar-track {
     background: whitesmoke;
+    
 }
 
 ::-webkit-scrollbar-thumb {
     background: #ff8c00a1;
+    border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
