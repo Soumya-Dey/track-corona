@@ -44,7 +44,7 @@ input:focus {
 }
 
 .loader {
-    margin: 5rem auto;
+    margin: 8rem auto;
     text-align: center;
     transform-origin: 44% 50%;
 }
@@ -233,7 +233,7 @@ MAIN CONTENT STYLES
 }
 
 .caret_icon {
-    transform: translateY(1px);
+    transform: translate(2px, 2px);
     margin-left: 10px;
     font-size: 1.2em;
     opacity: 0;
@@ -286,11 +286,11 @@ MAIN CONTENT STYLES
 .cases_number {
     font-weight: 700;
     font-size: 2.5em;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .total_death_number {
-    color: #ff8c00;
+    color: #FF4500;
 }
 
 .total_recovered_number {
@@ -305,7 +305,7 @@ MAIN CONTENT STYLES
 .total_recovered_heading,
 .total_confirmed_heading {
     font-weight: 800;
-    font-size: 1.1em;
+    font-size: 1.05em;
     text-transform: uppercase;
     opacity: 0.35;
 }
@@ -324,16 +324,16 @@ MAIN CONTENT STYLES
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 205px;
-    height: 170px;
-    margin-top: 75px;
+    width: 220px;
+    height: 185px;
+    margin-top: 80px;
 }
 
 .no_result_text {
     font-size: 1.1em;
     font-weight: 600;
     line-height: 1.6em;
-    margin-top: 75px;
+    margin-top: 95px;
     opacity: 0.4;
 }
 
@@ -341,8 +341,8 @@ MAIN CONTENT STYLES
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 280px;
-    width: 80px;
+    height: 240px;
+    width: 70px;
     background: #4e54c8;
     background: -webkit-linear-gradient(to bottom, #626afa, #4e54c8);
     background: linear-gradient(to bottom, #626afa, #4e54c8);
@@ -353,19 +353,20 @@ MAIN CONTENT STYLES
 .country_name {
     font-size: 2em;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 34px;
     color: rgba(0, 0, 0, 0.8);
     position: relative;
 }
 
+.specific_active_heading,
 .specific_deaths_heading,
 .specific_recovered_heading,
 .specific_confirmed_heading {
     font-weight: 800;
-    font-size: 1.1em;
+    font-size: 1.05em;
     text-transform: uppercase;
     opacity: 0.35;
-    margin-bottom: 52px;
+    margin-bottom: 38px;
 }
 
 .specific_confirmed_heading {
@@ -376,11 +377,15 @@ MAIN CONTENT STYLES
 .recovered_number,
 .death_number {
     font-weight: 700;
-    font-size: 2.6em;
+    font-size: 2.4em;
+}
+
+.specific_number{
+    color: #ff8c00;
 }
 
 .death_number {
-    color: #ff8c00;
+    color: #FF4500;
 }
 
 .recovered_number {
@@ -432,7 +437,7 @@ SYMPTOMS STYLES
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    padding: 10px 10px 30px 10px;
+    padding: 12px 12px 30px 12px;
     margin-bottom: 8px;
 }
 
