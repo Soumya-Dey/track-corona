@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    padding: 0 3%;
+    padding: 0 2%;
 }
 
 button:focus,
@@ -27,7 +27,6 @@ input:focus {
 
 ::-webkit-scrollbar-track {
     background: whitesmoke;
-    
 }
 
 ::-webkit-scrollbar-thumb {
@@ -55,8 +54,7 @@ NAVBAR STYLES
 
 .navbar_container {
     width: 100%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding: 1.5% 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,8 +171,8 @@ MAIN CONTENT STYLES
 */
 
 .cards_container {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     display: grid;
     grid-gap: 40px;
     grid-template-areas: "total specific" "total_number specific";
@@ -186,7 +184,7 @@ MAIN CONTENT STYLES
     grid-area: total;
     background-color: white;
     padding: 34px 46px;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -213,15 +211,33 @@ MAIN CONTENT STYLES
     opacity: 0.5;
 }
 
+.btn-cont {
+    display: flex;
+}
+
 .more_info_btn {
     display: flex;
     border: none;
-    transform: translateY(-2px);
     background-color: #4e54c8;
     color: whitesmoke;
-    padding: 12px 22px;
+    padding: 10px 20px;
     border-radius: 60px;
     cursor: pointer;
+}
+
+.symptoms_btn {
+    background-color: transparent;
+    color: #4e54c8;
+    border: 2px solid #4e54c8;
+    margin-left: 20px;
+}
+
+.btn_text_2 {
+    color: #4e54c8;
+    text-decoration: none;
+    font-weight: 600;
+    transform: translateX(6.5px);
+    transition: all 0.2s ease;
 }
 
 .btn_text {
@@ -244,7 +260,8 @@ MAIN CONTENT STYLES
     opacity: 1;
 }
 
-.more_info_btn:hover .btn_text {
+.more_info_btn:hover .btn_text,
+.more_info_btn:hover .btn_text_2 {
     transform: translateX(0);
 }
 
@@ -264,7 +281,7 @@ MAIN CONTENT STYLES
     grid-area: total_number;
     background-color: white;
     padding: 32px 46px;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -290,7 +307,7 @@ MAIN CONTENT STYLES
 }
 
 .total_death_number {
-    color: #FF4500;
+    color: #ff4500;
 }
 
 .total_recovered_number {
@@ -314,7 +331,7 @@ MAIN CONTENT STYLES
     grid-area: specific;
     background-color: white;
     padding: 34px 46px;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -347,7 +364,7 @@ MAIN CONTENT STYLES
     background: -webkit-linear-gradient(to bottom, #626afa, #4e54c8);
     background: linear-gradient(to bottom, #626afa, #4e54c8);
     clip-path: ellipse(100% 100% at 100% 100%);
-    border-radius: 0 0 12px 0;
+    border-radius: 0 0 8px 0;
 }
 
 .country_name {
@@ -380,12 +397,12 @@ MAIN CONTENT STYLES
     font-size: 2.4em;
 }
 
-.specific_number{
+.specific_number {
     color: #ff8c00;
 }
 
 .death_number {
-    color: #FF4500;
+    color: #ff4500;
 }
 
 .recovered_number {
@@ -396,12 +413,123 @@ MAIN CONTENT STYLES
     color: #4e54c8;
 }
 
+.table_container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks_text{
+    color: rgba(245, 245, 245, 0.7);
+    font-weight: 500;
+}
+
+.thanks_link{
+    color: #ff8c00;
+    opacity: 0.7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+}
+
+.thanks_link:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.table_card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    height: 600px;
+}
+
+.table_card::-webkit-scrollbar {
+    height: 8px;
+}
+
+.country_table {
+    width: 100%;
+    padding: 4px 8px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+.country_table th {
+    padding: 12px 18px;
+    font-weight: 700;
+    background-color: #f5f5f5;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 14px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border: 6px solid white;
+}
+
+.infected_th {
+    background-color: #4e54c840 !important;
+}
+
+.recovered_th {
+    background-color: rgba(41, 167, 41, 0.4) !important;
+}
+
+.active_th {
+    background-color: #ff8c0040 !important;
+}
+
+.deaths_th {
+    background-color: #ff440040 !important;
+}
+
+.country_table td {
+    padding: 12px 18px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+td {
+    border: 6px solid white;
+    border-radius: 14px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.number_td{
+    font-size: 0.9em;
+}
+
+.country_name_td,
+.infected_td,
+.deaths_td{
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #f8f8f8;
+}
+
 /*
 SYMPTOMS STYLES
 */
 
 .slider::-webkit-scrollbar {
-    height: 10px;
+    height: 8px;
 }
 
 .slider::-webkit-scrollbar-track {
@@ -448,7 +576,7 @@ SYMPTOMS STYLES
     height: 230px;
     margin-right: 40px;
     padding: 22px 34px;
-    border-radius: 12px;
+    border-radius: 8px;
     background: #fff;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
     transform-origin: center center;
@@ -470,7 +598,7 @@ SYMPTOMS STYLES
     align-items: center;
 }
 
-.symptom_img img{
+.symptom_img img {
     width: 90px;
     height: 120px;
     background-position: center;
@@ -478,15 +606,15 @@ SYMPTOMS STYLES
     background-size: cover;
 }
 
-.symptom_img_1 img{
+.symptom_img_1 img {
     width: 120px;
 }
 
-.symptom_img_2 img{
+.symptom_img_2 img {
     width: 120px;
 }
 
-.symptom_text{
+.symptom_text {
     font-size: 1.8em;
     font-weight: 700;
     opacity: 0.6;
@@ -511,12 +639,12 @@ FOOTER STYLES
 
 .copyright {
     color: rgba(245, 245, 245, 0.7);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .copyright a {
     color: #ff8c00;
-    opacity: 0.8;
+    opacity: 0.7;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1em;
@@ -525,6 +653,7 @@ FOOTER STYLES
 
 .copyright a:hover {
     opacity: 1;
+    text-decoration: underline;
 }
 
 .social-link {
@@ -690,7 +819,7 @@ MEDIA QUERIES
         grid-gap: 30px;
     }
 
-    .overview_card{
+    .overview_card {
         min-height: 615px;
     }
 
@@ -729,20 +858,20 @@ MEDIA QUERIES
         margin-top: 20px;
     }
 
-    .symptoms_container{
+    .symptoms_container {
         padding: 3.5% 6% 5% 6%;
     }
 
-    .item{
+    .item {
         width: 250px;
         height: 235px;
     }
 
-    .symptom_img{
+    .symptom_img {
         width: 80%;
     }
 
-    .symptoms_heading{
+    .symptoms_heading {
         margin-bottom: 16px;
         margin-left: 0;
         text-align: center;
@@ -768,7 +897,7 @@ MEDIA QUERIES
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
     .cards_container {
         grid-template-rows: 0.9fr 0.95fr 1.3fr;
     }
