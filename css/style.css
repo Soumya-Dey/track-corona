@@ -99,7 +99,7 @@ NAVBAR STYLES
 }
 
 .link_li {
-    margin-right: 20px;
+    margin-right: 24px;
 }
 
 .link_href {
@@ -442,7 +442,6 @@ MAIN CONTENT STYLES
 
 .table_card {
     width: 100%;
-    display: flex;
     border-radius: 8px;
     overflow-x: auto;
     overflow-y: auto;
@@ -450,6 +449,7 @@ MAIN CONTENT STYLES
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     height: 600px;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
 }
 
 .table_card::-webkit-scrollbar {
@@ -462,7 +462,6 @@ MAIN CONTENT STYLES
     background-color: white;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
     border-collapse: collapse;
 }
 
