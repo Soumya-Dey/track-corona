@@ -519,6 +519,10 @@ td {
     font-weight: 700;
 }
 
+.country_name_td{
+    width: 200px;
+}
+
 tr:nth-child(even) {
     background-color: #f8f8f8;
 }

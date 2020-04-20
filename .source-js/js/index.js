@@ -141,10 +141,7 @@ const tableGenerator = async (startIndex = 0, endIndex = 8) => {
     state.searchAllCountries.data
         .slice(startIndex, endIndex)
         .forEach((item, i) => {
-            let countryName =
-                item.country.length > 12
-                    ? item.country.toUpperCase().substring(0, 13) + ".."
-                    : item.country.toUpperCase();
+            let countryName = item.country;
 
             let totalCases =
                 item.cases > 0
