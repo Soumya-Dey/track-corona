@@ -609,6 +609,10 @@ SYMPTOMS STYLES
     padding-bottom: 2.5%;
 }
 
+#preventions .symptoms_container{
+    padding-top: 0;
+}
+
 .symptoms_heading {
     font-size: 2em;
     font-weight: 700;
@@ -624,7 +628,7 @@ SYMPTOMS STYLES
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     padding: 12px 12px 30px 12px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .item {
